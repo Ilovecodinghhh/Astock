@@ -1,0 +1,5 @@
+baostock
+numpy
+pandas
+pyarrow
+pytest
