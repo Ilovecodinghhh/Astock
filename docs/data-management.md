@@ -21,6 +21,9 @@
 - `user_data/data/`、`user_data/cross_sectional_features/`
   - Freqtrade 下载的币圈行情和生成特征。
   - 体积较大，且和本机运行环境强相关。
+- `crypto_freqtrade/user_data/`、`crypto_freqtrade/backtest_results/`、`crypto_freqtrade/hyperopt_results/`、`crypto_freqtrade/logs/`、`crypto_freqtrade/plot/`
+  - 加密货币/Freqtrade 的本地运行数据、回测输出、参数搜索结果、日志和图表。
+  - 这些内容和机器环境、下载区间、交易所配置强相关，不适合放进 Git。
 - `scan_results/`、`user_data/backtest_results/`、`user_data/hyperopt_results/`、`user_data/logs/`、`user_data/plot/`
   - 回测、参数搜索、日志和图表输出。
   - 需要讨论结果时，优先把少量精选结论整理进文档，而不是提交原始输出目录。
@@ -37,7 +40,7 @@
 - `scripts/` 下的源码。
 - `tests/` 下的测试。
 - `user_data/astock_pools/` 下的小体积股票池文本。
-- `user_data/strategies/` 下的策略源码。
+- `crypto_freqtrade/strategies/` 下的历史加密货币 Freqtrade 策略源码。
 - `docs/` 下的说明文档。
 - 经过筛选、用于解释决策的小型结果摘要。
 
@@ -119,4 +122,4 @@ command: python scripts/astock_batch_download.py --pool-file user_data/astock_po
 
 ## Freqtrade 相关说明
 
-当前 Git 里只保留 `user_data/strategies/*.py` 策略源码。Freqtrade 的运行目录、下载行情、hyperopt 结果、日志和配置 JSON 都是本地产物。需要继续跑 Freqtrade 时，在每台机器上单独安装和配置 Freqtrade。
+当前 Git 里只保留 `crypto_freqtrade/strategies/*.py` 策略源码。Freqtrade 的运行目录、下载行情、hyperopt 结果、日志和配置 JSON 都是本地产物。需要继续跑 Freqtrade 时，在每台机器上单独安装和配置 Freqtrade。

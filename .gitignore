@@ -16,12 +16,18 @@ scan_results/
 *.parquet
 *.zip
 
-# Freqtrade/A-share runtime data. Keep strategy source and small pool lists.
+# A-share runtime data. Keep small pool lists.
 user_data/*
-!user_data/strategies/
-!user_data/strategies/*.py
 !user_data/astock_pools/
 !user_data/astock_pools/*.txt
+
+# Crypto/Freqtrade runtime data. Keep strategy source and docs only.
+crypto_freqtrade/user_data/
+crypto_freqtrade/backtest_results/
+crypto_freqtrade/hyperopt_results/
+crypto_freqtrade/logs/
+crypto_freqtrade/plot/
+crypto_freqtrade/config*.json
 
 # Local configuration and secrets
 .env

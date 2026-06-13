@@ -7,10 +7,10 @@
 - `scripts/`：数据下载、因子生成、回测、扫描、稳健性验证脚本。
 - `tests/`：核心研究工具的回归测试。
 - `user_data/astock_pools/*.txt`：小体积股票池定义。
-- `user_data/strategies/*.py`：保留作参考的 Freqtrade 策略源码。
+- `crypto_freqtrade/strategies/*.py`：保留作参考的历史加密货币 Freqtrade 策略源码。
 - `docs/`：项目说明和协作文档。
 
-大型行情数据、生成特征、回测输出、运行缓存和本地配置文件不会进 Git。换电脑协作前先看 [docs/data-management.md](docs/data-management.md)。
+大型行情数据、生成特征、回测输出、运行缓存和本地配置文件不会进 Git。A 股研究主线和历史加密货币策略已经分开管理；换电脑协作前先看 [docs/data-management.md](docs/data-management.md)。
 
 ## 环境安装
 

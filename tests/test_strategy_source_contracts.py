@@ -11,7 +11,7 @@ def extract_class_source(source: str, class_name: str) -> str:
 
 
 def test_precomputed_relative_strength_strategy_does_not_scan_current_whitelist() -> None:
-    source = Path("user_data/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
+    source = Path("crypto_freqtrade/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
 
     class_source = extract_class_source(source, "FuturesPrecomputedRelativeStrengthLooseGuardStrategy")
 
@@ -23,7 +23,7 @@ def test_precomputed_relative_strength_strategy_does_not_scan_current_whitelist(
 
 
 def test_precomputed_relative_strength_strategy_overrides_entry_threshold() -> None:
-    source = Path("user_data/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
+    source = Path("crypto_freqtrade/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
 
     class_source = extract_class_source(source, "FuturesPrecomputedRelativeStrengthLooseGuardStrategy")
 
@@ -32,7 +32,7 @@ def test_precomputed_relative_strength_strategy_overrides_entry_threshold() -> N
 
 
 def test_precomputed_relative_strength_variants_inherit_clean_strategy() -> None:
-    source = Path("user_data/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
+    source = Path("crypto_freqtrade/strategies/AlternativeStrategyExperiments.py").read_text(encoding="utf-8")
 
     for class_name in [
         "FuturesPrecomputedRelativeStrengthLooseGuardHighStrategy",
