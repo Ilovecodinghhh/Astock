@@ -1,0 +1,29 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local test/build scratch directories
+.tmp/
+.tmp*/
+.tmp_pycache/
+.tmp_compile_cache/
+.tmp_pytest_run/
+
+# Generated strategy outputs and market data
+scan_results/
+*.feather
+*.parquet
+*.zip
+
+# Freqtrade/A-share runtime data. Keep strategy source and small pool lists.
+user_data/*
+!user_data/strategies/
+!user_data/strategies/*.py
+!user_data/astock_pools/
+!user_data/astock_pools/*.txt
+
+# Local configuration and secrets
+.env
+.env.*
+user_data/config*.json
